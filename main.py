@@ -112,7 +112,7 @@ progress_table.add_row(
 )
 
 def update_progress(block_num, block_size, total_size):
-    job_progress.update(job1, otal=int(total_size), advance=block_num * block_size)
+    job_progress.update(job1, total=int(total_size), advance=block_num * block_size)
     
     if job_progress.tasks[0].completed:
         job_progress.stop()
